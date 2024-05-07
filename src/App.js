@@ -1,13 +1,10 @@
-import { ColorInput } from '@mantine/core';
+import React from "react";
+import { Outlet } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <h1>My first React App</h1>
-      <ColorInput
-        label="Input label"
-        description="Input description"
-        placeholder="Input placeholder"
-      />
+      <Outlet />
     </div>
   );
 }
