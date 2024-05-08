@@ -8,7 +8,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
     return (
-        <div className='bg-gray-100 pt-16'>
+        <footer className='bg-gray-100 pt-16'>
             <div className="content_container">
                 <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
                     <div className="sm:col-span-2">
@@ -123,7 +123,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
