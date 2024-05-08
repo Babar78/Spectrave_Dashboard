@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 
 // Icons from React Icons
-import { GoHomeFill } from "react-icons/go";
 import { AiFillDashboard } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 import { IoPersonSharp, IoSettings } from "react-icons/io5";
