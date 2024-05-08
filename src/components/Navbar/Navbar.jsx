@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 import { AiFillDashboard } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 import { IoPersonSharp, IoSettings } from "react-icons/io5";
+import { GoHomeFill } from "react-icons/go";
 
 
 // Mantine Menu
@@ -48,6 +49,13 @@ const Navbar = () => {
         <nav className='w-screen bg-white shadow-sm fixed top-0 z-10'>
             <div className='flex justify-between items-center h-[80px] p-5 content_container'>
                 <Drawer opened={opened} onClose={toggle} title="Navigation Links" size='xs'>
+                    <Link to="/" className={`mt-5 rounded-lg p-2 ${active === "home" ? "text-primary bg-gray-100 hover:bg-gray-50" : "hover:text-primary"} flex items-center gap-2 justify-center w-full`} onClick={toggle}>
+                        <GoHomeFill className='text-[20px]' />
+
+                        <span>
+                            Home
+                        </span>
+                    </Link>
                     <Link to="/dashboard" className={`mt-5 rounded-lg p-2 ${active === "dashboard" ? "text-primary bg-gray-100 hover:bg-gray-50" : "hover:text-primary"} flex items-center gap-2 justify-center w-full`} onClick={toggle}>
                         <AiFillDashboard className='text-[20px]' />
 
