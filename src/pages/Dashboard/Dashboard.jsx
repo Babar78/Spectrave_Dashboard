@@ -14,7 +14,7 @@ import DashboardTab from '../../sections/Dashboard/DashboardTab/DashboardTab';
 const Dashboard = () => {
 
   return (
-    <div className='p-10 w-full overflow-hidden'>
+    <div className='p-10 w-full'>
       <Tabs variant="outline" defaultValue="dashboard">
         <Tabs.List>
           <Tabs.Tab value="dashboard">

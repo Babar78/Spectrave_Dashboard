@@ -3,7 +3,7 @@ import siteInfoImg from "../../../assets/images/site_model.jpeg"
 
 const SiteInfoTab = () => {
     return (
-        <div className='overflow-auto h-[calc(100vh-140px-2.5rem)] pr-5'>
+        <div className='overflow-auto h-[calc(100vh-140px-5rem)] pr-5'>
             <div className='flex flex-col gap-4'>
                 <img src={siteInfoImg} alt="Anomaly" className='rounded-lg w-fit max-h-[400px] object-cover' />
                 <div className='description'>

@@ -9,7 +9,7 @@ import CustomPieChart from '../../../components/CustomPieChart/CustomPieChart.js
 
 const DashboardTab = () => {
     return (
-        <div className='overflow-auto h-[calc(100vh-140px-2.5rem)] pr-5'>
+        <div className='overflow-auto h-[calc(100vh-140px-5rem)] pr-5'>
             <div className="flex flex-wrap xl:justify-between justify-center gap-10">
                 {statsData.map((data) => (
                     <StatsCard key={data.id} title={data.title} value={data.value} unit={data.unit} />
