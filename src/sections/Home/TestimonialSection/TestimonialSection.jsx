@@ -25,7 +25,7 @@ const TestimonialSection = () => {
     return (
         <section className="md:py-20 py-10">
             <div className="content_container">
-                <p className="uppercase text-primary text-[24px] text-center">
+                <p className="text-primary text-[24px] text-center">
                     Testimonial
                 </p>
                 <h2 className="text-[2.5rem] text-gray-90 mb-5 mt-3 text-center font-bold">

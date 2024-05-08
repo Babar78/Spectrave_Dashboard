@@ -5,6 +5,7 @@ import OurMission from '../../sections/Home/OurMission/OurMission'
 import DiscoverSection from '../../sections/Home/DiscoverSection/DiscoverSection'
 import TestimonialSection from '../../sections/Home/TestimonialSection/TestimonialSection'
 import CallToAction from '../../sections/Home/CallToAction/CallToAction'
+import BenefitsSection from '../../sections/Home/BenefitsSection/BenefitsSection'
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <HeroSection />
             <OurMission />
             <DiscoverSection />
+            <BenefitsSection />
             <TestimonialSection />
             <CallToAction />
             <Footer />

@@ -3,7 +3,7 @@ import CustomButton from '../../../components/CustomButton/CustomButton'
 
 const CallToAction = () => {
     return (
-        <section className="pb-20">
+        <section className="md:pb-20 pb-10">
             <div className="content_container bg-gray-90  rounded-[40px] ">
                 <div className='p-14 space-y-5 flex flex-col justify-center items-center'>
                     <h2 className="font-bold text-[2.5rem] text-white">
