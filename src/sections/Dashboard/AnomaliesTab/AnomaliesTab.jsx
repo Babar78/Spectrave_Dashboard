@@ -1,5 +1,5 @@
 import React from 'react'
-import anomalyImg from "../../assets/images/defect01.png";
+import anomalyImg from "../../../assets/images/defect01.png";
 
 const AnomaliesTab = () => {
     return (

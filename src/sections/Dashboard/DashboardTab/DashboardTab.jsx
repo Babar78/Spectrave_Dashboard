@@ -1,10 +1,10 @@
 import React from 'react'
-import StatsCard from '../StatsCard/StatsCard'
-import CustomBarChart from '../CustomBarChart/CustomBarChart.jsx'
+import StatsCard from '../../../components/StatsCard/StatsCard.jsx'
+import CustomBarChart from '../../../components/CustomBarChart/CustomBarChart.jsx'
 
 // Importing Data
-import { statsData, faultTypeData, accPowerLossData, faultTypeDist, accFinLossData } from '../../constants/data.js'
-import CustomPieChart from '../CustomPieChart/CustomPieChart.jsx'
+import { statsData, faultTypeData, accPowerLossData, faultTypeDist, accFinLossData } from '../../../constants/data.js'
+import CustomPieChart from '../../../components/CustomPieChart/CustomPieChart.jsx'
 
 
 const DashboardTab = () => {

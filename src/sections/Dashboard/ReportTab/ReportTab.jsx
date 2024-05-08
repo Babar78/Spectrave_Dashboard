@@ -1,6 +1,6 @@
 import React from 'react';
-import anomalyImg from "../../assets/images/defect01.png";
-import siteInfoImg from "../../assets/images/site_model.jpeg";
+import anomalyImg from "../../../assets/images/defect01.png";
+import siteInfoImg from "../../../assets/images/site_model.jpeg";
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 

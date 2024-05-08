@@ -1,5 +1,5 @@
 import React from 'react'
-import siteInfoImg from "../../assets/images/site_model.jpeg"
+import siteInfoImg from "../../../assets/images/site_model.jpeg"
 
 const SiteInfoTab = () => {
     return (

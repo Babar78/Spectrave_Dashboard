@@ -2,10 +2,10 @@ import React from 'react'
 
 // Mantine Tabs
 import { Tabs } from '@mantine/core';
-import AnomaliesTab from '../../components/AnomaliesTab/AnomaliesTab';
-import SiteInfoTab from '../../components/SiteInfoTab/SiteInfoTab';
-import ReportTab from '../../components/ReportTab/ReportTab';
-import DashboardTab from '../../components/DashboardTab/DashboardTab';
+import AnomaliesTab from '../../sections/Dashboard/AnomaliesTab/AnomaliesTab';
+import SiteInfoTab from '../../sections/Dashboard/SiteInfoTab/SiteInfoTab';
+import ReportTab from '../../sections/Dashboard/ReportTab/ReportTab';
+import DashboardTab from '../../sections/Dashboard/DashboardTab/DashboardTab';
 
 
 
