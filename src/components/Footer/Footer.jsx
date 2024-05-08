@@ -87,8 +87,7 @@ const Footer = () => {
                             </Link>
                         </div>
                         <p className="mt-4 text-sm text-gray-500">
-                            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-                            spare ribs salami.
+                            Join us in our journey towards a brighter, more sustainable tomorrow.
                         </p>
                     </div>
                 </div>
