@@ -18,7 +18,7 @@ const TestimonialCard = ({
                                 <img
                                     src={imageSrc}
                                     className="rotate-[6deg] rounded-full shadow-lg h-[70px] w-[70px] object-cover object-center lg:hidden block"
-                                    alt="image"
+                                    alt="person"
                                 />
                                 <div className="space-y-1 lg:space-y-2">
                                     <h2 className="text-3xl font-bold dark:text-white text-green-90">
@@ -46,7 +46,7 @@ const TestimonialCard = ({
                         <img
                             src={imageSrc}
                             className="rotate-[6deg] rounded-lg shadow-lg dark:shadow-black/20 h-[350px] w-[250px] object-cover object-center"
-                            alt="image"
+                            alt="person"
                         />
                     </div>
                 </div>
