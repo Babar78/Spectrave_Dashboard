@@ -7,7 +7,7 @@ import star from '../../../assets/images/star.svg'
 
 const HeroSection = () => {
     return (
-        <section className='mt-[80px]'>
+        <section className='md:mt-[80px] mt-[50px]'>
             <div className="grid md:grid-cols-2 gap-5 items-center">
                 <div className="">
                     <h1 className="font-black text-[2rem] lg:text-[3rem] text-gray-90">Empowering the Future with Clean Energy</h1>
