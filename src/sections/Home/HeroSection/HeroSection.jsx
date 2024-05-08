@@ -2,16 +2,19 @@ import React from 'react'
 import CustomButton from '../../../components/CustomButton/CustomButton'
 
 // image import
-import heroImg from '../../../assets/images/heroImg.png'
+import heroImg from '../../../assets/images/heroImg.jpg'
 import star from '../../../assets/images/star.svg'
 
 const HeroSection = () => {
     return (
-        <section className='md:mt-[80px] mt-[50px]'>
-            <div className="grid md:grid-cols-2 gap-5 items-center">
+        <section className='bg-cover bg-no-repeat bg-center h-full py-[50px] min-h-[600px]' style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)
+              ), url(${heroImg})`,
+        }}>
+            <div className="grid md:grid-cols-2 gap-5 items-center content_container">
                 <div className="">
-                    <h1 className="font-black text-[2rem] lg:text-[3rem] text-gray-90">Empowering the Future with Clean Energy</h1>
-                    <p className="text-[16px] mt-6 text-[#7B7B7B] xl:max-w-[520px]">
+                    <h1 className="font-black text-[2rem] lg:text-[3rem] text-primary-gradient">Empowering the Future with Clean Energy</h1>
+                    <p className="text-[16px] mt-6 text-white xl:max-w-[520px]">
                         We are dedicated to accompanying you on your quest for sustainable living by harnessing the power of the sun. Our mission is to guide you through an eco-conscious journey while exploring the undeniable beauty and potential of solar energy.
                     </p>
 
@@ -28,7 +31,7 @@ const HeroSection = () => {
                                 ))}
                         </div>
 
-                        <p className="bold-16 lg:bold-20 text-blue-70">
+                        <p className="bold-16 lg:bold-20 text-white">
                             198k
                             <span className="regular-16 lg:regular-20 ml-1">
                                 Excellent Reviews
@@ -44,7 +47,7 @@ const HeroSection = () => {
 
                 </div>
                 <div>
-                    <img src={heroImg} alt="Hero" className='w-full' />
+
                 </div>
             </div>
         </section>
