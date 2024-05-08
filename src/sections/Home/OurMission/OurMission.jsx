@@ -6,9 +6,9 @@ import missionImg from '../../../assets/images/missionImg.png'
 const OurMission = () => {
     return (
         <section className='content_container'>
-            <div className='md:pt-20 pt-10 grid md:grid-cols-2 gap-10'>
+            <div className='md:pt-20 py-10 grid md:grid-cols-2 gap-10'>
                 <div className='first-div md:block hidden'>
-                    <img src={missionImg} alt="Hero" className='w-auto h-[90%]' />
+                    <img src={missionImg} alt="Hero" className='w-auto' />
                 </div>
                 <div className='second-div'>
                     <h2 className='text-primary text-[24px]'>
