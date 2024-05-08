@@ -8,9 +8,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className="md:flex">
+    <div className="">
       <Navbar />
-      <Outlet />
+      <div className="mt-[80px] overflow-hidden">
+        <Outlet />
+      </div>
       <ToastContainer />
     </div>
   );

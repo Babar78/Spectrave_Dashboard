@@ -46,65 +46,9 @@ const Navbar = () => {
         , [location.pathname])
 
     return (
-        <div className="navbar">
-            <aside className="md:flex hidden h-screen w-fit flex-col items-center border-r border-gray-200 bg-white p-2">
-                <div className="flex h-[4.5rem] w-full items-center justify-center border-b border-gray-200 p-2">
-                    <img src={logo} alt='Company Logo' />
-                </div>
-                <nav className="flex flex-1 flex-col gap-y-4 pt-10 w-full">
-                    <Link to="/" className={`rounded-lg p-2 ${active === "home" ? "text-primary bg-gray-100 hover:bg-gray-50" : "hover:text-primary"} flex items-center gap-2 justify-center w-full`}>
-                        <GoHomeFill className='text-[20px]' />
-                        <span>
-                            Home
-                        </span>
-
-                    </Link>
-                    <Link to="/dashboard" className={`rounded-lg p-2 ${active === "dashboard" ? "text-primary bg-gray-100 hover:bg-gray-50" : "hover:text-primary"} flex items-center gap-2 justify-center w-full`}>
-                        <AiFillDashboard className='text-[20px]' />
-
-                        <span>
-                            Dashboard
-                        </span>
-                    </Link>
-                </nav>
-                <div className='mb-10'>
-                    <Menu shadow="md" width={200}>
-                        <Menu.Target>
-                            <button
-                            >
-                                <Avatar
-                                    size="lg"
-                                    radius="100%"
-                                    src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-1.png"
-                                />
-                            </button>
-                        </Menu.Target>
-
-                        <Menu.Dropdown>
-                            <Menu.Label>User Profile</Menu.Label>
-                            <Menu.Item leftSection={<IoPersonSharp className='text-[20px]' />}>
-                                Profile
-                            </Menu.Item>
-                            <Menu.Item leftSection={<IoSettings className='text-[20px]' />}>
-                                Settings
-                            </Menu.Item>
-                            <Menu.Divider />
-                            <Menu.Item leftSection={<FiLogOut className='text-[20px]' />}>
-                                Logout
-                            </Menu.Item>
-                        </Menu.Dropdown>
-                    </Menu>
-                </div>
-            </aside>
-            <nav className='md:hidden flex justify-between border-b border-gray-200 p-5 h-[80px]'>
+        <nav className='w-screen bg-white shadow-sm fixed top-0 z-10'>
+            <div className='flex justify-between items-center h-[80px] p-5 content_container'>
                 <Drawer opened={opened} onClose={toggle} title="Navigation Links" size='xs'>
-                    <Link to="/" className={`rounded-lg p-2 ${active === "home" ? "text-primary bg-gray-100 hover:bg-gray-50" : "hover:text-primary"} flex items-center gap-2 justify-center w-full`} onClick={toggle}>
-                        <GoHomeFill className='text-[20px]' />
-                        <span>
-                            Home
-                        </span>
-
-                    </Link>
                     <Link to="/dashboard" className={`mt-5 rounded-lg p-2 ${active === "dashboard" ? "text-primary bg-gray-100 hover:bg-gray-50" : "hover:text-primary"} flex items-center gap-2 justify-center w-full`} onClick={toggle}>
                         <AiFillDashboard className='text-[20px]' />
 
@@ -114,7 +58,9 @@ const Navbar = () => {
                     </Link>
                 </Drawer>
                 <Burger opened={opened} onClick={toggle} aria-label="Toggle Drawer" />
-                <img src={logo} alt='Company Logo' />
+                <Link to="/">
+                    <img src={logo} alt='Company Logo' />
+                </Link>
                 <div className=''>
                     <Menu shadow="md" width={200}>
                         <Menu.Target>
@@ -140,8 +86,8 @@ const Navbar = () => {
                         </Menu.Dropdown>
                     </Menu>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     )
 }
 
